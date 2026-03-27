@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: 'space-grotesk';
+    font-family: Inter, sans-serif;
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
 }
@@ -19,6 +19,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .name {
@@ -157,4 +158,45 @@ button:hover {
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 4px;
+}
+
+#scroll-nav {
+    position: fixed; /* Positions the element relative to the browser window */
+    bottom: 0;      /* Aligns it to the bottom edge */
+    left: 0;        /* Aligns it to the left edge */
+    width: 100%;    /* Makes it span the full width */
+    text-align: center; /* Center the text */
+    padding: 10px 0;
+}
+
+#scroll-nav p {
+    color: rgb(153, 153, 153);
+}
+
+.skill-badge {
+    border-radius: 999px;
+    font-family: 'Inter', sans-serif;
+}
+#tools{
+    background-color: rgb(189, 245, 231);
+    color: rgb(38, 148, 119);
+    border-color: rgb(189, 245, 231);
+}
+
+#languages {
+    background-color: rgb(189, 190, 245);
+    color: rgb(38, 40, 148);
+    border-color: rgb(189, 190, 245);
+}
+
+#web-dev{
+    background-color: rgb(245, 189, 189);
+    color: rgb(148, 38, 38);
+    border-color: rgb(245, 189, 189);
+}
+.card-body {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    align-items: flex-start;
 }
