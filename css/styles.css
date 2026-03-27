@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: sans-serif;
+    font-family: 'space-grotesk', sans-serif;
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
 }
