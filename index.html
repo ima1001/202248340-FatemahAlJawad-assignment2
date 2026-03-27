@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fatemah's Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js"></script>
+
+</head>
+
+<body>
+
+<section class="panel name">
+    <img src="images/sunset.jpg" class="name-img">
+
+    <div class="overlay"></div>
+
+    <div class="name-content">
+        <h1>Fatemah Al Jawad</h1>
+        <p>Computer Science Student</p>
+    </div>
+</section>
+
+
+<section class="panel light">
+    <div class="content">
+        <h2>About Me</h2>
+        <p>
+            Ambitious Computer Science student with hands-on experience in
+            software development, digital design, and networks,
+            seeking an internship opportunity to contribute
+            technical expertise and problem-solving skills.
+        </p>
+    </div>
+</section>
+
+
+<section class="panel dark">
+    <div class="content">
+        <h2>Education</h2>
+
+        <div class="education-item">
+            <div>
+                <strong>KFUPM</strong><br>
+                Computer Science
+            </div>
+            <div>2022 - Present</div>
+        </div>
+
+        <ul>
+            <li>GPA: 3.639 / 4.00</li>
+            <li>Expected Graduation: 2027</li>
+        </ul>
+    </div>
+</section>
+
+
+<section class="panel light">
+    <div class="content">
+        <h2>Projects</h2>
+
+        <div class="projects-grid">
+            <div class="project">
+
+                <div class="slider">
+                    <button class="prev">←</button>
+
+                    <img class="project-image"
+                        src="images/facelite_dark.png"
+                        data-images="images/facelite_dark.png,images/facelite_light.png">
+
+                    <button class="next">→</button>
+                </div>
+
+                <h3>Facelite</h3>
+                <p>Simple social media platform created using java and javafx.</p>
+
+            </div>
+
+
+            <div class="project">
+
+                <div class="slider">
+                    <button class="prev">←</button>
+
+                    <img class="project-image"
+                        src="images/imgcompress.png"
+                        data-images="images/imgcompress.png,images/imgcompress_light.png">
+
+                    <button class="next">→</button>
+                </div>
+
+                <h3>Image Compression</h3>
+                <p>Java-based Quadtree implementation.</p>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="panel dark">
+    <div class="content">
+        <h2>Technical Skills</h2>
+
+        <p><strong>Languages:</strong> Java, Python, SQL, Verilog</p>
+        <p><strong>Web:</strong> HTML, CSS, JavaScript</p>
+        <p><strong>Tools:</strong> VS Code, MySQL, IntelliJ</p>
+    </div>
+</section>
+
+<section class="panel light">
+    <section id="contact"> 
+                <form class="contact-container simple-form">
+                    <label for="name">Username</label>
+                    <input type="text" id="username" placeholder="Enter username">
+
+                    <label for="email">Email</label>
+                    <input type="text" id="email" placeholder="Enter email">
+
+                    <label for="message">Message</label>
+                    <textarea id="message" placeholder="Enter message" rows="5"></textarea>
+
+                    <button type="submit">Submit</button>
+                </form>
+        </section>
+</section>
+
+
+</body>
+</html>
