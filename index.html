@@ -13,30 +13,20 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="js/script.js"></script>
 <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg" id="main-nav">
         <div class="container">
-            <image class="rounded" href="#" src="src/assets/images/logoC.png" style="width: 2.5rem;"></image>
+            <a href="#"><image class="rounded" href="#" src="src/assets/images/logoC.png" style="height: 32px;"></image></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#education">Education</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#projects">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#skills">Skills</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -85,8 +75,10 @@
                 <div class="timeline-dot active"></div>
                 <div class="timeline-card">
                     <div class="school-row">
-                        <img src="src/assets/images/kfupm.png" class="school-logo" alt="KFUPM">
-                        <div>
+                        <a href="https://www.kfupm.edu.sa" target="_blank" rel="noopener">
+                            <img src="src/assets/images/kfupm.png" class="school-logo" alt="KFUPM">
+                        </a>
+                       <div>
                             <div class="school-name">KFUPM</div>
                             <div class="school-deg">B.S. of Science in Computer Science</div>
                         </div>
@@ -103,7 +95,9 @@
                 <div class="timeline-dot"></div>
                 <div class="timeline-card">
                     <div class="school-row">
-                        <img src="src/assets/images/gt.png" class="school-logo" alt="Georgia Tech">
+                        <a href="https://www.gatech.edu" target="_blank" rel="noopener">
+                            <img src="src/assets/images/gt.png" class="school-logo" alt="Georgia Tech">
+                        </a> 
                         <div>
                             <div class="school-name">Georgia Institute of Technology</div>
                             <div class="school-deg">Exchange Program · Computer Science</div>
@@ -243,74 +237,83 @@
     </div>
 
     <div class="skills-grid">
-
-        <div class="card" style="width: 25rem; background-color: #313131;">
-            <div class="card-body">
-                <h6 class="card-title">Languages</h6>
+        <div class="skill-card" style="width: 25rem; background-color: #313131;">
+                <h6 class="skill-card-title">Languages</h6>
                 <div class="badge-group">
-                    <button class="btn btn-sm skill-badge language">Java</button>
-                    <button class="btn btn-sm skill-badge language">Python</button>
-                    <button class="btn btn-sm skill-badge language">SQL</button>
-                    <button class="btn btn-sm skill-badge language">Verilog</button>
-                    <button class="btn btn-sm skill-badge language">MIPS Assembly</button>
+                    <span class="skill-badge language">Java</span>
+                    <span class="skill-badge language">Python</span>
+                    <span class="skill-badge language">SQL</span>
+                    <span class="skill-badge language">Verilog</span>
+                    <span class="skill-badge language">MIPS Assembly</span>
                 </div>
-            </div>
         </div>
 
-        <div class="card" style="width: 25rem; background-color: #313131;">
-            <div class="card-body">
-                <h6 class="card-title">Web Development</h6>
+        <div class="skill-card" style="width: 25rem; background-color: #313131;">
+                <h6 class="skill-card-title">Web Development</h6>
                 <div class="badge-group">
-                    <button class="btn btn-sm skill-badge web-dev">HTML</button>
-                    <button class="btn btn-sm skill-badge web-dev">CSS</button>
-                    <button class="btn btn-sm skill-badge web-dev">JavaScript</button>
-                    <button class="btn btn-sm skill-badge web-dev">React.js</button>
+                    <span class="skill-badge web-dev">HTML</span>
+                    <span class="skill-badge web-dev">CSS</span>
+                    <span class="skill-badge web-dev">JavaScript</span>
+                    <span class="skill-badge web-dev">React.js</span>
                 </div>
-            </div>
         </div>
 
-        <div class="card" style="width: 25rem; background-color: #313131;">
-            <div class="card-body">
-                <h6 class="card-title">Tools</h6>
+        <div class="skill-card" style="width: 25rem; background-color: #313131;">
+                <h6 class="skill-card-title">Tools</h6>
                 <div class="badge-group">
-                    <button class="btn btn-sm skill-badge tools">VS Code</button>
-                    <button class="btn btn-sm skill-badge tools">MySQL</button>
-                    <button class="btn btn-sm skill-badge tools">IntelliJ</button>
-                    <button class="btn btn-sm skill-badge tools">WireShark</button>
-                    <button class="btn btn-sm skill-badge tools">Figma</button>
-                    <button class="btn btn-sm skill-badge tools">GitHub</button>
-                    <button class="btn btn-sm skill-badge tools">Google Colab</button>
-                    <button class="btn btn-sm skill-badge tools">CircuitSim</button>
-                </div>
+                    <span class="skill-badge tools">VS Code</span>
+                    <span class="skill-badge tools">MySQL</span>
+                    <span class="skill-badge tools">IntelliJ</span>
+                    <span class="skill-badge tools">WireShark</span>
+                    <span class="skill-badge tools">Figma</span>
+                    <span class="skill-badge tools">GitHub</span>
+                    <span class="skill-badge tools">Google Colab</span>
+                    <span class="skill-badge tools">CircuitSim</span>
             </div>
         </div>
 
     </div>
 </section>
 
-<section class="panel light">
-    <section id="contact"> 
-        <form class="card simple-form">
-            <div class="form-group">
-                <label for="name">Username</label>
-                <input type="text" id="username" placeholder="Enter username">
-            </div>
-                        
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input type="text" id="email" placeholder="Enter email">
-            </div>
-                
-            <div class="form-group">
-                <label for="message">Message</label>
-                <textarea id="message" placeholder="Enter message" rows="5"></textarea>
-            </div>
+<section class="panel light" id="contact-panel">
+    <section id="contact">
+        <div class="contact-wrapper">
 
-            <button type="submit" style="width: 250px;">Submit</button>
+            <div class="contact-left">
+                <p class="section-eyebrow">Get in touch</p>
+                <h2 class="section-heading">Contact</h2>
+                <p class="contact-sub">Feel free to reach out for internship opportunities or collaborations.</p>
 
-            <span class="form-message hidden" id="form-message"></span>
-        </form>
+                <div class="social-links">
+                    <a href="https://github.com/ima1001" target="_blank" rel="noopener" class="social-btn">
+                        <img src="src/assets/images/github.svg" class="social-icon" alt="GitHub"> GitHub
+                    </a>
+                    <a href="https://linkedin.com/" target="_blank" rel="noopener" class="social-btn">
+                        <img src="src/assets/images/linkedin.webp" class="social-icon" alt="LinkedIn"> LinkedIn
+                    </a>
+                </div>
+            </div>  <!-- ← closes contact-left -->
+
+            <form class="card simple-form">
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" placeholder="Enter username">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" placeholder="Enter email">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" placeholder="Enter message" rows="5"></textarea>
+                </div>
+                <button type="submit" style="width: 250px;">Submit</button>
+                <span class="form-message hidden" id="form-message"></span>
+            </form>
+
+        </div> 
     </section>
+</section>
 </section>
 
 
