@@ -84,7 +84,7 @@ All AI-generated code was reviewed, understood, and modified to fit the project.
 
 ## Live Deployment
 
-> Coming soon — will be deployed via GitHub Pages.
+> Deployed via GitHub Pages.
 
 🔗 [Live Site](https://ima1001.github.io/202248340-FatemahAlJawad-assignment2/)
 
@@ -94,6 +94,3 @@ All AI-generated code was reviewed, understood, and modified to fit the project.
 
 **Fatemah Al Jawad**  
 Computer Science Student — KFUPM  
-Exchange Program — Georgia Institute of Technology  
-
-[GitHub](https://github.com/ima1001) · [LinkedIn](https://linkedin.com/in/your-username)
