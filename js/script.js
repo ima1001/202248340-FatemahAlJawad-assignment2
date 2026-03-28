@@ -2,9 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const form = document.querySelector(".simple-form");
 
-    let messageDisplay = document.createElement("p");
-    messageDisplay.style.marginTop = "10px";
-    form.appendChild(messageDisplay);
+    let messageDisplay = document.getElementById("form-message");
 
     form.addEventListener("submit", function (event) {
 
@@ -16,54 +14,48 @@ document.addEventListener("DOMContentLoaded", function () {
 
         if (username === "" || email === "" || message === "") {
             messageDisplay.textContent = "Please fill in all fields.";
-            messageDisplay.style.color = "red";
+            messageDisplay.classList.remove("hidden");
+            messageDisplay.classList.remove("success");
+            messageDisplay.classList.add("fail");
             return;
         }
 
         if (!email.includes("@") || !email.includes(".")) {
             messageDisplay.textContent = "Please enter a valid email address.";
-            messageDisplay.style.color = "red";
+            messageDisplay.classList.remove("hidden");
+            messageDisplay.classList.remove("success");
+            messageDisplay.classList.add("fail");
             return;
         }
 
-        messageDisplay.textContent = "Message sent successfully!";
-        messageDisplay.style.color = "green";
-
+        messageDisplay.textContent = '✓ Message sent successfully!';
+        messageDisplay.classList.remove("hidden");
+        messageDisplay.classList.remove("fail");
+        messageDisplay.classList.add("success");
         form.reset();
+        });
     });
 
     document.addEventListener("DOMContentLoaded", function () {
 
-    const sliders = document.querySelectorAll(".slider");
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const projectCards = document.querySelectorAll('.project-card');
 
-    sliders.forEach(slider => {
+    filterBtns.forEach(btn => {
+        btn.addEventListener('click', function () {
 
-        const image = slider.querySelector(".project-image");
-        const prevBtn = slider.querySelector(".prev");
-        const nextBtn = slider.querySelector(".next");
+            filterBtns.forEach(b => b.classList.remove('active'));
+            this.classList.add('active');
 
-        const images = image.dataset.images.split(",");
-        let currentIndex = 0;
+            const selected = this.dataset.filter;
 
-        prevBtn.addEventListener("click", function () {
-            currentIndex--;
-            if (currentIndex < 0) {
-                currentIndex = images.length - 1;
-            }
-            image.src = images[currentIndex];
+            projectCards.forEach(card => {
+                if (selected === 'all' || card.dataset.category === selected) {
+                    card.classList.remove('hidden');
+                } else {
+                    card.classList.add('hidden');
+                }
+            });
         });
-
-        nextBtn.addEventListener("click", function () {
-            currentIndex++;
-            if (currentIndex >= images.length) {
-                currentIndex = 0;
-            }
-            image.src = images[currentIndex];
-        });
-
     });
-
-});
-
-
 });

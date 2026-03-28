@@ -21,11 +21,13 @@ body {
     align-items: center;
 }
 
+
 .name {
     position: relative;
     color: white;
     background: #0d1117;
     overflow: hidden;
+    flex-direction: column;
 }
 
 .name::before {
@@ -62,8 +64,8 @@ body {
 }
 
 .light {
-    background: white;
-    color: black;
+    background: #0d1117;
+    color: whitesmoke;
 }
 
 .dark {
@@ -90,7 +92,6 @@ body {
     justify-content: flex-start;
     flex-direction: column;
     scroll-snap-align: none;
-    background: #0d1117;
 }
 
 #projects .content {
@@ -98,7 +99,6 @@ body {
     max-width: 1100px;
 }
 
-/* section title style */
 .section-eyebrow {
     font-size: 11px;
     font-weight: 500;
@@ -115,7 +115,6 @@ body {
     margin-bottom: 24px;
 }
 
-/* filter bar */
 .filter-bar {
     display: flex;
     gap: 8px;
@@ -273,6 +272,12 @@ button:not(.skill-badge):not(.filter-btn):not(.btn):hover {
     flex-direction: column;
     align-items: center;   /* centers horizontally */
     gap: 12px;             /* spacing between elements */
+    width: 100%;
+    color: white;
+    background: #161b27;
+    border: 0.5px solid rgba(255,255,255,0.07);
+    border-radius: 12px;
+    padding: 24px;
 }
 
 .simple-form textarea {
@@ -287,6 +292,38 @@ button:not(.skill-badge):not(.filter-btn):not(.btn):hover {
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 4px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* align labels and inputs to the left */
+    gap: 6px; /* spacing between label and input */
+}
+
+.form-message.hidden {
+    display: none;
+}
+
+.form-message{
+    width: 250px;
+    margin-top: 10px;
+    font-size: 14px;
+    border: 0.5px solid;
+    border-radius: 10px;
+    padding: 6px 8px;
+}
+
+.form-message.fail {
+    background-color: #ffe0e0;
+    color: #a62d31;
+    border:#a62d31;
+}
+
+.form-message.success {
+    background-color: #ddffe8;
+    color:#0d7a3c;
+    border: #0d7a3c;
 }
 
 #scroll-nav {
@@ -348,3 +385,131 @@ button:not(.skill-badge):not(.filter-btn):not(.btn):hover {
     flex-direction: column;
     scroll-snap-align: none;
 }
+
+/* timeline */
+.timeline {
+    position: relative;
+    padding-left: 32px;
+    margin-top: 8px;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 7px;
+    top: 8px;
+    bottom: 8px;
+    width: 1.5px;
+    background: repeating-linear-gradient(
+        to bottom,
+        rgba(255,255,255,0.25) 0px,
+        rgba(255,255,255,0.25) 6px,
+        transparent 6px,
+        transparent 12px
+    );
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 24px;
+}
+
+.timeline-item:last-child {
+    margin-bottom: 0;
+}
+
+.timeline-dot {
+    position: absolute;
+    left: -32px;
+    top: 6px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: rgb(34, 40, 49);
+    border: 2px solid rgba(255,255,255,0.3);
+}
+
+.timeline-dot.active {
+    border-color: white;
+    background: white;
+}
+
+/* card inside timeline */
+.timeline-card {
+    background: #2d3441;
+    border: 0.5px solid rgba(255,255,255,0.08);
+    border-radius: 10px;
+    padding: 16px 18px;
+}
+
+.school-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 10px;
+}
+
+.school-logo {
+    width: 38px;
+    height: 38px;
+    border-radius: 8px;
+    object-fit: contain;
+    background: white;
+    padding: 4px;
+    flex-shrink: 0;
+}
+
+.school-name {
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+    margin-bottom: 2px;
+}
+
+.school-deg {
+    font-size: 12px;
+    color: rgba(255,255,255,0.45);
+}
+
+.school-meta {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.meta-item {
+    font-size: 11px;
+    color: rgba(255,255,255,0.4);
+}
+
+.meta-item span {
+    color: rgba(255,255,255,0.75);
+    font-weight: 500;
+    margin-left: 4px;
+}
+
+.badge-current {
+    font-size: 10px;
+    padding: 2px 8px;
+    border-radius: 999px;
+    background: #ddffe8;
+    color: #0d7a3c;
+    font-weight: 500;
+    margin-left: auto;
+    align-self: flex-start;
+    white-space: nowrap;
+}
+
+.badge-exchange {
+    font-size: 10px;
+    padding: 2px 8px;
+    border-radius: 999px;
+    background: #ddf0ff;
+    color: #0a5fa6;
+    font-weight: 500;
+    margin-left: auto;
+    align-self: flex-start;
+    white-space: nowrap;
+}
+

@@ -15,7 +15,7 @@
 <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
-            <image class="rounded" href="#" src="src/assets/images/logoC.png"></image>
+            <image class="rounded" href="#" src="src/assets/images/logoC.png" style="width: 2.5rem;"></image>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -50,7 +50,7 @@
         <p>Open to internship</p>
     </div>
     <div>
-        <button type="button" class="btn btn-dark">View Project</button>
+        <button type="button" class="btn btn-dark" href="#projects">View Project</button>
         <button type="button" class="btn btn-dark">Contact Me</button>
     </div>
     <div id="scroll-nav">
@@ -62,8 +62,8 @@
 
 <section class="panel light" id="about">
     <div class="content">
-        <p class="section-eyebrow">Portfolio</p>
-        <h2 class="section-heading" style="color: #313131;">About</h2>
+        <p class="section-eyebrow">Introduction</p>
+        <h2 class="section-heading">About</h2>
         <p>
             Ambitious Computer Science student with hands-on experience in
             software development, digital design, and networks,
@@ -76,21 +76,47 @@
 
 <section class="panel dark" id="education">
     <div class="content">
-        <p class="section-eyebrow">Portfolio</p>
+        <p class="section-eyebrow">Background</p>
         <h2 class="section-heading">Education</h2>
 
-        <div class="education-item">
-            <div>
-                <strong>KFUPM</strong><br>
-                Computer Science
-            </div>
-            <div>2022 - Present</div>
-        </div>
+        <div class="timeline">
 
-        <ul>
-            <li>GPA: 3.639 / 4.00</li>
-            <li>Expected Graduation: 2027</li>
-        </ul>
+            <div class="timeline-item">
+                <div class="timeline-dot active"></div>
+                <div class="timeline-card">
+                    <div class="school-row">
+                        <img src="src/assets/images/kfupm.png" class="school-logo" alt="KFUPM">
+                        <div>
+                            <div class="school-name">KFUPM</div>
+                            <div class="school-deg">B.S. of Science in Computer Science</div>
+                        </div>
+                        <span class="badge-current">Current</span>
+                    </div>
+                    <div class="school-meta">
+                        <div class="meta-item">Period <span>Sep 2022 – Jun 2027</span></div>
+                        <div class="meta-item">GPA <span>3.639 / 4.00</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-card">
+                    <div class="school-row">
+                        <img src="src/assets/images/gt.png" class="school-logo" alt="Georgia Tech">
+                        <div>
+                            <div class="school-name">Georgia Institute of Technology</div>
+                            <div class="school-deg">Exchange Program · Computer Science</div>
+                        </div>
+                        <span class="badge-exchange">Exchange</span>
+                    </div>
+                    <div class="school-meta">
+                        <div class="meta-item">Period <span>Sep  2025 – Dec 2025</span></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </div>
 </section>
 
@@ -106,6 +132,8 @@
             <button class="filter-btn" data-filter="database">Database</button>
             <button class="filter-btn" data-filter="hardware">Hardware</button>
             <button class="filter-btn" data-filter="ai">AI</button>
+            <button class="filter-btn" data-filter="web">Web Development</button>
+
         </div>
 
         <div class="projects-grid">
@@ -138,7 +166,7 @@
             </div>
 
             <div class="card project-card" data-category="database">
-                <div class="card-img-placeholder">🗄</div>
+                <img src="src/assets/images/hospital_db.png" class="card-img-top" alt="Hospital System EERD">
                 <div class="card-content">
                     <h6 class="card-name">Hospital Database System</h6>
                     <p class="card-desc">SQL system for managing hospital operations, patient records and staff data.</p>
@@ -151,7 +179,7 @@
             </div>
 
             <div class="card project-card" data-category="hardware">
-                <div class="card-img-placeholder">⚙</div>
+                <img src="src/assets/images/cpu.png" class="card-img-top" alt="Pipelined CPU Design">
                 <div class="card-content">
                     <h6 class="card-name">Pipelined CPU</h6>
                     <p class="card-desc">CPU with data forwarding mechanisms and hazard detection built in LogiSim.</p>
@@ -177,7 +205,7 @@
             </div>
 
             <div class="card project-card" data-category="ai">
-                <div class="card-img-placeholder">✦</div>
+                <img src="src/assets/images/handwriting.png" class="card-img-top" alt="Alphabet Recognition MLP ">
                 <div class="card-content">
                     <h6 class="card-name">Alphabet Recognition</h6>
                     <p class="card-desc">ML model recognizing handwritten alphabets with 97% accuracy using KNN, SVM, MLP.</p>
@@ -186,6 +214,20 @@
                         <span class="skill-badge cat-ai">AI</span>
                         <span class="skill-badge cat-ai">KNN</span>
                         <span class="skill-badge cat-ai">SVM</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card project-card" data-category="web">
+                <img src="src/assets/images/portfolio.png" class="card-img-top" alt="Portfolio Website Header">
+                <div class="card-content">
+                    <h6 class="card-name">Portfolio Website</h6>
+                    <p class="card-desc">This portfolio website.</p>
+                    <div class="badge-group">
+                        <span class="skill-badge cat-web">Web Development</span>
+                        <span class="skill-badge cat-web">HTML</span>
+                        <span class="skill-badge cat-web">CSS</span>
+                        <span class="skill-badge cat-web">JavaScript</span>
                     </div>
                 </div>
             </div>
@@ -248,19 +290,27 @@
 
 <section class="panel light">
     <section id="contact"> 
-                <form class="contact-container simple-form">
-                    <label for="name">Username</label>
-                    <input type="text" id="username" placeholder="Enter username">
+        <form class="card simple-form">
+            <div class="form-group">
+                <label for="name">Username</label>
+                <input type="text" id="username" placeholder="Enter username">
+            </div>
+                        
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="text" id="email" placeholder="Enter email">
+            </div>
+                
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" placeholder="Enter message" rows="5"></textarea>
+            </div>
 
-                    <label for="email">Email</label>
-                    <input type="text" id="email" placeholder="Enter email">
+            <button type="submit">Submit</button>
 
-                    <label for="message">Message</label>
-                    <textarea id="message" placeholder="Enter message" rows="5"></textarea>
-
-                    <button type="submit">Submit</button>
-                </form>
-        </section>
+            <span class="form-message hidden" id="form-message"></span>
+        </form>
+    </section>
 </section>
 
 
