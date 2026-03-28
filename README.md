@@ -7,7 +7,7 @@ A personal portfolio website built as part of a web development course assignmen
 ## Features
 
 - Smooth scroll-snap navigation between sections
-- Animated hero section with dot-grid background
+- Animated name header section with dot-grid background
 - Education timeline with school logos
 - Project gallery with category filter (Java, Database, Hardware, AI, Web)
 - Skills section with color-coded badges
@@ -45,12 +45,12 @@ No installation or build tools required. This is a plain HTML/CSS/JS project.
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-id-your-name-assignment2.git
+   git clone (https://github.com/ima1001/202248340-FatemahAlJawad-assignment2.git)
    ```
 
 2. Open the project folder:
    ```bash
-   cd your-id-your-name-assignment2
+   cd 202248340-FatemahAlJawad-assignment2
    ```
 
 3. Open `index.html` in your browser:
@@ -64,7 +64,6 @@ No installation or build tools required. This is a plain HTML/CSS/JS project.
 | Library | Purpose |
 |---|---|
 | Bootstrap 5.3.3 | Layout, navbar, utility classes |
-| Font Awesome 6.5.0 | Icons |
 | Google Fonts (Inter) | Typography |
 
 ---
