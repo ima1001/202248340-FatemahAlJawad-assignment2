@@ -637,3 +637,50 @@ button:not(.skill-badge):not(.filter-btn):not(.btn):hover {
     white-space: nowrap;
 }
 
+html, body {
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
+@media (max-width: 768px) {
+
+    .name h1 {
+        font-size: 36px;
+        letter-spacing: 2px;
+    }
+
+    .name p {
+        font-size: 15px;
+    }
+
+    #projects, #skills, #contact-panel {
+        padding: 40px 20px;
+    }
+
+    .content {
+        width: 90%;
+    }
+
+    .contact-wrapper {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .simple-form {
+        width: 100%;
+    }
+
+    .simple-form input,
+    .simple-form textarea,
+    .form-message {
+        width: 100%;
+    }
+
+    .contact-left {
+        width: 100%;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+}
