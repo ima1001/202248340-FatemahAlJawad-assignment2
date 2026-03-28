@@ -35,11 +35,8 @@ document.addEventListener("DOMContentLoaded", function () {
         messageDisplay.classList.add("success");
         form.reset();
     });
-});
 
 // Projects Filter Script
-document.addEventListener("DOMContentLoaded", function () {
-
     const filterBtns = document.querySelectorAll('.filter-btn');
     const projectCards = document.querySelectorAll('.project-card');
 
