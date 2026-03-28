@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const form = document.querySelector(".simple-form");
 
-    let messageDisplay = document.getElementById("form-message");
+    const messageDisplay = document.getElementById("form-message");
 
     form.addEventListener("submit", function (event) {
 
