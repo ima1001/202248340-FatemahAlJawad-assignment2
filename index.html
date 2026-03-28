@@ -62,7 +62,8 @@
 
 <section class="panel light" id="about">
     <div class="content">
-        <h2>About Me</h2>
+        <p class="section-eyebrow">Portfolio</p>
+        <h2 class="section-heading" style="color: #313131;">About</h2>
         <p>
             Ambitious Computer Science student with hands-on experience in
             software development, digital design, and networks,
@@ -75,7 +76,8 @@
 
 <section class="panel dark" id="education">
     <div class="content">
-        <h2>Education</h2>
+        <p class="section-eyebrow">Portfolio</p>
+        <h2 class="section-heading">Education</h2>
 
         <div class="education-item">
             <div>
@@ -95,98 +97,107 @@
 
 <section class="panel light" id="projects">
     <div class="content">
-        <h2>Projects</h2>
+        <p class="section-eyebrow">Portfolio</p>
+        <h2 class="section-heading">Projects</h2>
+
+        <div class="filter-bar">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="java">Java</button>
+            <button class="filter-btn" data-filter="database">Database</button>
+            <button class="filter-btn" data-filter="hardware">Hardware</button>
+            <button class="filter-btn" data-filter="ai">AI</button>
+        </div>
 
         <div class="projects-grid">
-        <div class="card" style="background-color: #313131;">
-            <div class="card-body">
-                <h6 class="card-title">Facelite</h6>
-                <p class="card-text">Simple social media platform created using java and javafx.</p>
-                <img src="src/assets/images/facelite_dark.png" class="card-img-top" alt="facelite_darkMode">
-                <div class="badge-group">
-                    <button class="btn btn-sm skill-badge" id="pCat">Java</button>
-                    <button class="btn btn-sm skill-badge" id="pCat">JavaFX</button>
-                    <button class="btn btn-sm skill-badge" id="pCat">OOP</button>
+
+            <div class="card project-card" data-category="java">
+                <img src="src/assets/images/facelite_dark.png" class="card-img-top" alt="Facelite">
+                <div class="card-content">
+                    <h6 class="card-name">Facelite</h6>
+                    <p class="card-desc">Social media platform built with Java and JavaFX featuring user profiles and interactions.</p>
+                    <div class="badge-group">
+                        <span class="skill-badge cat-java">Java</span>
+                        <span class="skill-badge cat-java">JavaFX</span>
+                        <span class="skill-badge cat-java">OOP</span>
+                        <span class="skill-badge cat-java">GUI</span>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="card" style="background-color: #313131;">
-            <div class="card-body">
-                <h6 class="card-title">Quadtree Image Compression</h6>
-                <p class="card-text">Developed in Java to effeciently compress images using quadtree data structure.</p>
-                <img src="src/assets/images/imgcompress.png" class="card-img-top" alt="quadtree_compression">
-                <div class="badge-group">
-                    <button class="btn btn-sm skill-badge" id="pCat">Java</button>
-                    <button class="btn btn-sm skill-badge" id="pCat">Algorithms</button>
-                    <button class="btn btn-sm skill-badge" id="pCat">Data Structures</button>
-                    <button class="btn btn-sm skill-badge" id="pCat">Algorithms</button>
+            <div class="card project-card" data-category="java">
+                <img src="src/assets/images/imgcompress.png" class="card-img-top" alt="Quadtree Compression">
+                <div class="card-content">
+                    <h6 class="card-name">Quadtree Image Compression</h6>
+                    <p class="card-desc">Efficiently compresses images using quadtree data structure implemented in Java.</p>
+                    <div class="badge-group">
+                        <span class="skill-badge cat-java">Java</span>
+                        <span class="skill-badge cat-java">Algorithms</span>
+                        <span class="skill-badge cat-java">Data Structures</span>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="card" style="background-color: #313131;">
-            <div class="card-body">
-                <h6 class="card-title">Hospital Database System</h6>
-                <p class="card-text">A database system designed using SQL for managing hospital operations and patient records.</p>
-                <div class="card-img-placeholder"></div>
-                <div class="badge-group">
-                    <button class="btn btn-sm skill-badge" id="pCat">SQL</button>
-                    <button class="btn btn-sm skill-badge" id="pCat">Database Design</button>
-
+            <div class="card project-card" data-category="database">
+                <div class="card-img-placeholder">🗄</div>
+                <div class="card-content">
+                    <h6 class="card-name">Hospital Database System</h6>
+                    <p class="card-desc">SQL system for managing hospital operations, patient records and staff data.</p>
+                    <div class="badge-group">
+                        <span class="skill-badge cat-database">SQL</span>
+                        <span class="skill-badge cat-database">Database Design</span>
+                        <span class="skill-badge cat-database">ER Modeling</span>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="card" style="background-color: #313131;">
-            <div class="card-body">
-                <h6 class="card-title">Pipelined CPU with Data Forwarding</h6>
-                <p class="card-text">Implementation of a pipelined CPU with data forwarding mechanisms and hazard detection in LogiSim.</p>
-                <div class="card-img-placeholder"></div>
-                <div class="badge-group">
-                    <button class="btn btn-sm skill-badge" id="pCat">Circuit Design</button>
-                    <button class="btn btn-sm skill-badge" id="pCat">LogiSim</button>
-                    <button class="btn btn-sm skill-badge" id="pCat">Computer Architecture</button>
-
+            <div class="card project-card" data-category="hardware">
+                <div class="card-img-placeholder">⚙</div>
+                <div class="card-content">
+                    <h6 class="card-name">Pipelined CPU</h6>
+                    <p class="card-desc">CPU with data forwarding mechanisms and hazard detection built in LogiSim.</p>
+                    <div class="badge-group">
+                        <span class="skill-badge cat-hardware">LogiSim</span>
+                        <span class="skill-badge cat-hardware">Circuit Design</span>
+                        <span class="skill-badge cat-hardware">Computer Architecture</span>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="card" style="background-color: #313131;">
-            <div class="card-body">
-                <h6 class="card-title">Smart Parking System</h6>
-                <p class="card-text">A smart parking system designed using Verilog to optimize parking space utilization and provide real-time parking availability information and depoled in FPGA.</p>
-                <div class="card-img-placeholder"></div>
-                <div class="badge-group">
-                    <button class="btn btn-sm skill-badge" id="pCat">Verilog</button>
-                    <button class="btn btn-sm skill-badge" id="pCat">FPGA</button>
-                    <button class="btn btn-sm skill-badge" id="pCat">Logic Design</button>
-
+            <div class="card project-card" data-category="hardware">
+                <div class="card-img-placeholder">🅿</div>
+                <div class="card-content">
+                    <h6 class="card-name">Smart Parking System</h6>
+                    <p class="card-desc">Verilog-based parking system deployed on FPGA with real-time availability tracking.</p>
+                    <div class="badge-group">
+                        <span class="skill-badge cat-hardware">Verilog</span>
+                        <span class="skill-badge cat-hardware">FPGA</span>
+                        <span class="skill-badge cat-hardware">Logic Design</span>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="card" style="background-color: #313131;">
-            <div class="card-body">
-                <h6 class="card-title">Handwritten Alphabet Recognition</h6>
-                <p class="card-text">A machine learning model designed to recognize handwritten alphabets and implemented in Python using KNN, SVM, and MLP models achieving an accuracy of 97%.</p>
-                <div class="card-img-placeholder"></div>
-                <div class="badge-group">
-                    <button class="btn btn-sm skill-badge" id="pCat">Python</button>
-                    <button class="btn btn-sm skill-badge" id="pCat">AI</button>
-
-
+            <div class="card project-card" data-category="ai">
+                <div class="card-img-placeholder">✦</div>
+                <div class="card-content">
+                    <h6 class="card-name">Alphabet Recognition</h6>
+                    <p class="card-desc">ML model recognizing handwritten alphabets with 97% accuracy using KNN, SVM, MLP.</p>
+                    <div class="badge-group">
+                        <span class="skill-badge cat-ai">Python</span>
+                        <span class="skill-badge cat-ai">AI</span>
+                        <span class="skill-badge cat-ai">KNN</span>
+                        <span class="skill-badge cat-ai">SVM</span>
+                    </div>
                 </div>
             </div>
+
         </div>
-    </div>
     </div>
 </section>
 
-
 <section class="panel dark" id="skills">
     <div class="content">
-        <h2>Technical Skills</h2>
+        <p class="section-eyebrow">Portfolio</p>
+        <h2 class="section-heading">Technical Skills</h2>
     </div>
 
     <div class="skills-grid">
@@ -195,11 +206,11 @@
             <div class="card-body">
                 <h6 class="card-title">Languages</h6>
                 <div class="badge-group">
-                    <button class="btn btn-sm skill-badge" id="languages">Java</button>
-                    <button class="btn btn-sm skill-badge" id="languages">Python</button>
-                    <button class="btn btn-sm skill-badge" id="languages">SQL</button>
-                    <button class="btn btn-sm skill-badge" id="languages">Verilog</button>
-                    <button class="btn btn-sm skill-badge" id="languages">MIPS Assembly</button>
+                    <button class="btn btn-sm skill-badge language">Java</button>
+                    <button class="btn btn-sm skill-badge language">Python</button>
+                    <button class="btn btn-sm skill-badge language">SQL</button>
+                    <button class="btn btn-sm skill-badge language">Verilog</button>
+                    <button class="btn btn-sm skill-badge language">MIPS Assembly</button>
                 </div>
             </div>
         </div>
@@ -208,10 +219,10 @@
             <div class="card-body">
                 <h6 class="card-title">Web Development</h6>
                 <div class="badge-group">
-                    <button class="btn btn-sm skill-badge" id="web-dev">HTML</button>
-                    <button class="btn btn-sm skill-badge" id="web-dev">CSS</button>
-                    <button class="btn btn-sm skill-badge" id="web-dev">JavaScript</button>
-                    <button class="btn btn-sm skill-badge" id="web-dev">React.js</button>
+                    <button class="btn btn-sm skill-badge web-dev">HTML</button>
+                    <button class="btn btn-sm skill-badge web-dev">CSS</button>
+                    <button class="btn btn-sm skill-badge web-dev">JavaScript</button>
+                    <button class="btn btn-sm skill-badge web-dev">React.js</button>
                 </div>
             </div>
         </div>
@@ -220,14 +231,14 @@
             <div class="card-body">
                 <h6 class="card-title">Tools</h6>
                 <div class="badge-group">
-                    <button class="btn btn-sm skill-badge" id="tools">VS Code</button>
-                    <button class="btn btn-sm skill-badge" id="tools">MySQL</button>
-                    <button class="btn btn-sm skill-badge" id="tools">IntelliJ</button>
-                    <button class="btn btn-sm skill-badge" id="tools">WireShark</button>
-                    <button class="btn btn-sm skill-badge" id="tools">Figma</button>
-                    <button class="btn btn-sm skill-badge" id="tools">GitHub</button>
-                    <button class="btn btn-sm skill-badge" id="tools">Google Colab</button>
-                    <button class="btn btn-sm skill-badge" id="tools">CircuitSim</button>
+                    <button class="btn btn-sm skill-badge tools">VS Code</button>
+                    <button class="btn btn-sm skill-badge tools">MySQL</button>
+                    <button class="btn btn-sm skill-badge tools">IntelliJ</button>
+                    <button class="btn btn-sm skill-badge tools">WireShark</button>
+                    <button class="btn btn-sm skill-badge tools">Figma</button>
+                    <button class="btn btn-sm skill-badge tools">GitHub</button>
+                    <button class="btn btn-sm skill-badge tools">Google Colab</button>
+                    <button class="btn btn-sm skill-badge tools">CircuitSim</button>
                 </div>
             </div>
         </div>
