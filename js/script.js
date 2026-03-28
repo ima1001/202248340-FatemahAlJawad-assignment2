@@ -1,3 +1,4 @@
+// Script for Contact Form Validation
 document.addEventListener("DOMContentLoaded", function () {
 
     const form = document.querySelector(".simple-form");
@@ -33,10 +34,11 @@ document.addEventListener("DOMContentLoaded", function () {
         messageDisplay.classList.remove("fail");
         messageDisplay.classList.add("success");
         form.reset();
-        });
     });
+});
 
-    document.addEventListener("DOMContentLoaded", function () {
+// Projects Filter Script
+document.addEventListener("DOMContentLoaded", function () {
 
     const filterBtns = document.querySelectorAll('.filter-btn');
     const projectCards = document.querySelectorAll('.project-card');
